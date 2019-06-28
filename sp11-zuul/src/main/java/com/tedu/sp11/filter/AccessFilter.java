@@ -14,7 +14,7 @@ import com.tedu.web.util.JsonResult;
 public class AccessFilter extends ZuulFilter{
 	@Override
 	public boolean shouldFilter() {
-	    //对指定的serviceid过滤，如果要过滤所有服务，直接返回 true
+	    //对指定的serviceid过滤，如果要过滤所有服务，直接返回 true ~
 	    
 		RequestContext ctx = RequestContext.getCurrentContext();
 		String serviceId = (String) ctx.get(FilterConstants.SERVICE_ID_KEY);
